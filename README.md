@@ -48,3 +48,21 @@ else:
     ingredients_txt = ingredients_use
 
 ingredients_line = ingredients_txt.split(',')
+ingredients_line = ingredients_txt.split(',')
+
+harmfull_ingredients = ["sugar", "maida", "preservatives", "artificial colors", "artificial flavors","palm oil"]
+healthy_ingredients = ["Fiber", "Protein", "Vitamin", "Whole grain", "Calcium","Carbohydrate"]
+
+harmfull_coun = 0
+healthy_count = 0
+
+for items in ingredients_line:
+   if cleaned in harmful_ingredients:
+        print(f"{cleaned} Harmful")
+        harmful_count += 1
+    elif cleaned in healthy_ingredients:
+        print(f"{cleaned} Healthy")
+        healthy_count += 1
+    else:
+        print(f"{cleaned} Unknown")
+
